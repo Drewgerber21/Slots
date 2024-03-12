@@ -1,0 +1,2 @@
+g++ main.cpp -g slot_machine.h slot_machine.cpp helpers.h helpers.cpp
+./a.out
