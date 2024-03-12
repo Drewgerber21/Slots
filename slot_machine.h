@@ -1,5 +1,5 @@
-#ifndef SLOT_MACHINE
-#define SLOT_MACHINE
+#ifndef SLOT_MACHINE_H
+#define SLOT_MACHINE_H
 
 #include <vector>
 
@@ -10,19 +10,21 @@ namespace SLOT_MACHINE
 			public:
 				// Constants
 				int DEFAULT_JACKPOT = 1000000;
-				// std::vector<std::vector<char>> DEFAULT_SLOTS = {{'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
-				//                                                 {'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
-				//                                                 {'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'}};
 				
 				std::vector<std::vector<int>> DEFAULT_SLOTS = {{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11},
 					                                            {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11},
 					                                            {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}};
+					                                            
+				std::vector<std::vector<int>> DEFAULT_WINNING_SLOTS = {{1, 2, 3},
+															           {1, 2, 3},
+					                                                   {1, 2, 3}};
 				
 				// Constructor
 				slot_machine()
 				{
 					jackpot_ = DEFAULT_JACKPOT;
 					slots_ = DEFAULT_SLOTS;
+					winning_slots_ = DEFAULT_WINNING_SLOTS;
 				}
 				
 				// Deconstructor
@@ -32,10 +34,17 @@ namespace SLOT_MACHINE
 					slots_.clear();
 				}
 				
+				// Getters
+				int getJackpot();
+				
+				// Functions
+				void spin();
+				
 			private:
 				int jackpot_;
 				std::vector<std::vector<int>> slots_;
+				std::vector<std::vector<int>> winning_slots_;
 		};
 }
 
-#endif // SLOT_MACHINE
+#endif
