@@ -1,7 +1,13 @@
-# Command Line Slots
+# Musical Scales Command Line Slots
 
 This purpose of this project is to create a working slot machine that
-can be played from the command line using c++.
+can be played from the command line using c++. The win condition for
+these slots would be when the three randoom notes that are selected make
+a chord. This could be any three note chord, the more complex the chord,
+the higher the value. For example: major and minor chords are worth
+different amounts of points, different inversions could be worth
+different amounts of points, and the different root notes will be worth
+different amounts of points.  
 
 # Goals
 
