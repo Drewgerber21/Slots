@@ -10,9 +10,13 @@ namespace SLOT_MACHINE
 			public:
 				// Constants
 				int DEFAULT_JACKPOT = 1000000;
-				std::vector<std::vector<char>> DEFAULT_SLOTS = {{'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
-													        	{'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
-															    {'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'}};
+				// std::vector<std::vector<char>> DEFAULT_SLOTS = {{'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
+				//                                                 {'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
+				//                                                 {'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'}};
+				
+				std::vector<std::vector<int>> DEFAULT_SLOTS = {{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11},
+					                                            {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11},
+					                                            {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}};
 				
 				// Constructor
 				slot_machine()
@@ -22,7 +26,7 @@ namespace SLOT_MACHINE
 				}
 			private:
 				int jackpot_;
-				std::vector<std::vector<char>> slots_;
+				std::vector<std::vector<int>> slots_;
 		};
 }
 
