@@ -10,9 +10,9 @@ namespace SLOT_MACHINE
 			public:
 				// Constants
 				int DEFAULT_JACKPOT = 1000000;
-				std::vector<std::vector<char>> DEFAULT_SLOTS = {{'a', 'b', 'c'},
-													        	{'a', 'b', 'c'},
-															    {'a', 'b', 'c'}};
+				std::vector<std::vector<char>> DEFAULT_SLOTS = {{'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
+													        	{'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'},
+															    {'A', 'A# / Bb', 'B', 'C', 'C# / Db', 'D', 'D# / Eb', 'E', 'F', 'F# / Gb', 'G', 'G# / Ab'}};
 				
 				// Constructor
 				slot_machine()
@@ -26,4 +26,4 @@ namespace SLOT_MACHINE
 		};
 }
 
-#endif
+#endif // SLOT_MACHINE
