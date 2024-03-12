@@ -24,6 +24,14 @@ namespace SLOT_MACHINE
 					jackpot_ = DEFAULT_JACKPOT;
 					slots_ = DEFAULT_SLOTS;
 				}
+				
+				// Deconstructor
+				~slot_machine()
+				{
+					jackpot_ = 0;
+					slots_.clear();
+				}
+				
 			private:
 				int jackpot_;
 				std::vector<std::vector<int>> slots_;
