@@ -6,7 +6,7 @@
 
 using namespace HELPERS;
 
-void HELPERS::randomizeVector(std::vector<char>& vector)
+void HELPERS::randomizeVector(std::vector<int>& vector)
 {
 	std::random_device rd;
 	std::mt19937 gen(rd());

@@ -6,7 +6,7 @@
 
 namespace HELPERS
 {
-	void randomizeVector(std::vector<char>& vector);
+	void randomizeVector(std::vector<int>& vector);
 }
 
 #endif 
